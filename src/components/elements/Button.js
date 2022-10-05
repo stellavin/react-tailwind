@@ -1,7 +1,12 @@
-function Button() {
+function Button({ title, handleEvent }) {
   return (
-    <button className="flex border p-5 rounded-xl shadow-sm bg-green-500 text-white focus:outline-none focus:bg-purple-600 focus:text-white hover:bg-white hover:text-gray-700 ">
-      Hello World
+    <button
+      type="button"
+      onClick={() => handleEvent()}
+      className="button-gradient py-3 px-3 sm:px-6 
+      text-white w-auto sm:w-320 text-center mt-10 mb-10"
+    >
+      {title}
     </button>
   );
 }
