@@ -10,9 +10,15 @@ const CreateEventPage = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen items-center justify-center group bg-white-color">
-      <HeaderComponent createtitle="Create new event." Img="" />
-      <div>
+    <div className="flex flex-col h-fit items-center justify-center group bg-white-color">
+      <div className="sm:mt-18 mb-10 text-center ">
+        <>
+          <h1 className="w-400">
+            Create <span className="text-gradient">Event</span>
+          </h1>
+        </>
+      </div>{" "}
+      <div className="-mt-14">
         <label className="block text-sm font-medium text-gray-700">
           Event Name
         </label>
@@ -20,7 +26,6 @@ const CreateEventPage = () => {
           <input type="text" name="Eventname" id="email" />
         </div>
       </div>
-
       <div>
         <label className="block text-sm font-medium text-gray-700">
           Last Name
@@ -29,7 +34,6 @@ const CreateEventPage = () => {
           <input type="text" name="Eventname" id="email" />
         </div>
       </div>
-
       <div>
         <label className="block text-sm font-medium text-gray-700">
           Start Date
@@ -38,7 +42,6 @@ const CreateEventPage = () => {
           <input type="text" name="Eventname" id="email" />
         </div>
       </div>
-
       <div>
         <label className="block text-sm font-medium text-gray-700">
           End Date
@@ -47,7 +50,6 @@ const CreateEventPage = () => {
           <input type="text" name="Eventname" id="email" />
         </div>
       </div>
-
       <div>
         <label className="block text-sm font-medium text-gray-700">
           Location Name
@@ -56,14 +58,12 @@ const CreateEventPage = () => {
           <input type="text" name="Eventname" id="email" />
         </div>
       </div>
-
       <div>
         <label className="block text-sm font-medium text-gray-700">Image</label>
         <div className="mt-1">
           <input type="file" name="Eventname" id="email" accept="image/*" />
         </div>
       </div>
-
       <Button title={"🎉 Create my event"} handleEvent={createMyEvent} />
     </div>
   );

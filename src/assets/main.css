@@ -72,6 +72,43 @@ input[type="file"] {
 input[type="submit"]:hover {
     background-color: #45a049;
   }
+h2 {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+    color: #240d57;
+  }
+.smalltxt {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1px;
+    color: #828282;
+    display: flex;
+    align-items: center;
+  }
+.fromtxt {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #240d57;
+  }
+.smallcard {
+    width: 56px;
+    height: 56px;
+
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
 .m-auto {
     margin: auto;
 }
@@ -81,11 +118,23 @@ input[type="submit"]:hover {
 .mt-1 {
     margin-top: 0.25rem;
 }
+.-mt-20 {
+    margin-top: -5rem;
+}
 .mt-2 {
     margin-top: 0.5rem;
 }
 .mt-10 {
     margin-top: 2.5rem;
+}
+.-mt-10 {
+    margin-top: -2.5rem;
+}
+.-mt-14 {
+    margin-top: -3.5rem;
+}
+.mt-5 {
+    margin-top: 1.25rem;
 }
 .block {
     display: block;
@@ -137,6 +186,9 @@ input[type="submit"]:hover {
 }
 .items-center {
     align-items: center;
+}
+.items-start {
+    align-items: flex-start;
 }
 .justify-center {
     justify-content: center;
@@ -238,10 +290,6 @@ input[type="submit"]:hover {
     --tw-text-opacity: 1;
     color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
-.text-indigo-600 {
-    --tw-text-opacity: 1;
-    color: rgba(79, 70, 229, var(--tw-text-opacity));
-}
 .text-gray-500 {
     --tw-text-opacity: 1;
     color: rgba(107, 114, 128, var(--tw-text-opacity));
@@ -258,16 +306,9 @@ input[type="submit"]:hover {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
-.no-underline {
-    text-decoration: none;
-}
 .shadow {
     --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.hover\:bg-gray-50:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 @media (min-width: 640px) {
     .sm\:mt-16 {
