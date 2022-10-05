@@ -2,13 +2,11 @@ import Button from "../components/elements/Button";
 import { useHistory } from "react-router-dom";
 import HeaderComponent from "../components/headerComponent";
 import image from "../assets/images/Birthday-cake.png";
+import calender from "../assets/images/calender.png";
+import location from "../assets/images/location.png";
 
 const EventPage = () => {
   const history = useHistory();
-
-  const createMyEvent = () => {
-    history.push("/");
-  };
 
   const event = {
     name: "Movie night",
@@ -37,7 +35,13 @@ const EventPage = () => {
               <div className="flex items-center px-4 py-4 sm:px-6">
                 <div className="flex min-w-0 flex-1 items-center">
                   <div className="flex-shrink-0">
-                    <div className="smallcard"></div>
+                    <div className="smallcard">
+                      <img
+                        class="h-6 w-6 mt-4 rounded-full"
+                        src={calender}
+                        alt=""
+                      />
+                    </div>
                   </div>
                   <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                     <div className="flex flex-col items-start">
@@ -70,7 +74,13 @@ const EventPage = () => {
               <div className="flex items-center px-4 py-4 sm:px-6">
                 <div className="flex min-w-0 flex-1 items-center">
                   <div className="flex-shrink-0">
-                    <div className="smallcard"></div>
+                    <div className="smallcard">
+                      <img
+                        class="h-6 w-6 mt-4 rounded-full"
+                        src={location}
+                        alt=""
+                      />
+                    </div>{" "}
                   </div>
                   <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                     <div className="flex flex-col items-start">
