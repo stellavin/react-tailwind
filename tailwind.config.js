@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "pr-dark-purple": "#240D57",
         "light-pink": "#F6F2FF",
+        "white-color": "#FBFAFF",
       },
       width: {
         400: "543.91px",
