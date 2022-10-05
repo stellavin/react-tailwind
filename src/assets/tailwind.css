@@ -1,35 +1,69 @@
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    /* .btn:hover{
+  /* .btn:hover{
         @apply bg-[#f8f9fa] p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover: ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md;
     }
 
     .link:hover {
         @apply hover:underline cursor-pointer
     } */
-    .btn{
-        @apply bg-[#f8f9fa] p-3 rounded-md ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md;
-    }
-    .link{
-         @apply hover:underline cursor-pointer;
-    }
+  input,
+  button {
+    outline: none !important;
+  }
+  h1 {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    line-height: 64px;
+    color: #240d57;
+  }
+  p {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #4f4f4f;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .btn {
+    @apply bg-[#f8f9fa] p-3 rounded-md ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md;
+  }
 
-    .card {
-        background-color: #1C1F26;
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
 
-        min-width: 16rem;
-        max-width: 20rem;
-        height: 22.5rem;
+  .card {
+    background-color: #1c1f26;
+    min-width: 16rem;
+    max-width: 20rem;
+    height: 22.5rem;
+  }
 
-
-
-    }
-
-    .card-layout {
-        background-color: #1E1217;
-        min-height: 100vh;
-    }
+  .card-layout {
+    background-color: #1e1217;
+    min-height: 100vh;
+  }
+  .bg-gradient {
+    background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
+    background-size: 100%;
+    transition: background-size 1s;
+  }
+  .text-gradient {
+    background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 }
